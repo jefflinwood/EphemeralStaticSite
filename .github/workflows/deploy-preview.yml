@@ -40,5 +40,5 @@ jobs:
                 issue_number: context.issue.number,
                 owner: context.repo.owner,
                 repo: context.repo.repo,
-                body: "🌐 Preview: http://$BUCKET_NAME.s3-website-$REGION.amazonaws.com/pr-${{ github.event.number }}/"
+                body: "🌐 Preview: http://${{BUCKET_NAME}}.s3-website-${{REGION}}.amazonaws.com/pr-${{ github.event.number }}/"
                 })
