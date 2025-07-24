@@ -7,6 +7,8 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     env:
       BUCKET_NAME: jtl-preview-bucket
       REGION: us-east-1
